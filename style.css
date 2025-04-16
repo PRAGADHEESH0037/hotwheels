@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+nav {
+  background-color: #000;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.container {
+  padding: 20px;
+  text-align: center;
+}
+
+.toy {
+  display: inline-block;
+  background-color: white;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  width: 220px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.toy img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+button {
+  background-color: #25D366;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #128C7E;
+}
+
+/* Animations and logo styling */
+.logo {
+  text-align: center;
+  padding: 15px;
+  animation: fadeInDown 1s ease-out;
+}
+.logo img {
+  width: 200px;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.toy:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
